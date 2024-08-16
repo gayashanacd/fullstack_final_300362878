@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-const BACKEND_URL = import.meta.env.VITE_BACKEND_API_URL || 'http://localhost:5000/api/v1/book';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_API_URL || 'https://fullstack-final-300362878-backend.vercel.app/api/v1/book' || 'http://localhost:5000/api/v1/book';
 
 console.log("BACKEND_URL >> ", import.meta.env.VITE_BACKEND_API_URL);
 
