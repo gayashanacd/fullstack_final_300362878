@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-const BACKEND_URL = import.meta.env.REACT_APP_API_URL || 'http://localhost:5000/api/v1/book';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_API_URL || 'http://localhost:5000/api/v1/book';
 
 export default function CreateBook() {
     const [title, setOnChangeTitle] = useState(``);

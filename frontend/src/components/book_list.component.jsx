@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-const BACKEND_URL = import.meta.env.REACT_APP_API_URL || 'http://localhost:5000/api/v1/book';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_API_URL || 'http://localhost:5000/api/v1/book';
+
+console.log("BACKEND_URL >> ", import.meta.env.VITE_BACKEND_API_URL);
 
 const Book = (props) => (
     <div className="card-container">
